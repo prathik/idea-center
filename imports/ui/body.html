@@ -1,0 +1,21 @@
+<body>
+	<div class="container">
+		<header>
+			<h1>Feature Requests</h1>
+		</header>
+
+        <h3>Request a feature</h3>
+		<form class="new-task">
+            <textarea name="text"></textarea>
+            <input type="submit"/>
+		</form>
+        <h3>+1 to support a feature</h3>
+        <hr/>
+     
+		<ul>
+			{{#each tasks}}
+			{{> task}}
+			{{/each}}
+		</ul>
+	</div>
+</body>
