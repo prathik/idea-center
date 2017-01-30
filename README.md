@@ -1,4 +1,4 @@
-# Feature Requests
+# Idea Center
 
 ## Installation
 
