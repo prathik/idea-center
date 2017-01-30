@@ -24,7 +24,7 @@ Template.body.events({
 		// Insert a task into the collection
 		Tasks.insert({
 			text,
-			upvotes: 0,
+			upvotes: 1,
 			createdAt: new Date(), // current time
 		});
 
