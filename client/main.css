@@ -126,6 +126,10 @@ header .hide-completed {
 
 }
 
+.mainBody h3 {
+    padding-left: 10px;
+}
+
 @media (max-width: 600px) {
     li {
         padding: 12px 15px;

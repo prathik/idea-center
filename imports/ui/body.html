@@ -1,9 +1,11 @@
 <body>
 	<div class="container">
 		<header>
-			<h1>Feature Requests</h1>
+			<h1>Idea Center</h1>
 		</header>
 
+        {{> loginButtons}}
+        <div class="mainBody">
         <h3>Request a feature</h3>
 		<form class="new-task">
             <textarea name="text"></textarea>
@@ -17,5 +19,6 @@
 			{{> task}}
 			{{/each}}
 		</ul>
+        </div>
 	</div>
 </body>
