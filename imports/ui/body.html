@@ -3,15 +3,15 @@
 		<header>
 			<h1>Idea Center</h1>
 		</header>
-
         {{> loginButtons}}
+        {{#if currentUser}}
         <div class="mainBody">
-        <h3>Request a feature</h3>
+        <h3>Post your idea</h3>
 		<form class="new-task">
             <textarea name="text"></textarea>
-            <input type="submit"/>
+            <input type="submit" />
 		</form>
-        <h3>+1 to support a feature</h3>
+        <h3>+1 to support an idea</h3>
         <hr/>
      
 		<ul>
@@ -20,5 +20,8 @@
 			{{/each}}
 		</ul>
         </div>
+        {{else}}
+        <h3>Please login to vote/post</h3>
+        {{/if}}
 	</div>
 </body>
