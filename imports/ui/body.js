@@ -1,3 +1,4 @@
+import { Meteor   } from 'meteor/meteor';
 import { Template } from 'meteor/templating';
 
 import { Tasks  } from '../api/tasks.js';
@@ -31,6 +32,7 @@ Template.body.events({
 	'submit .new-task'(event) {
 		// Prevent default browser form submit
 		event.preventDefault();
+		var user = Meteor.user();
 
 		// Get value from form element
 		const target = event.target;
@@ -38,6 +40,7 @@ Template.body.events({
 
 		// Insert a task into the collection
 		Tasks.insert({
+			createdBy: user,
 			text,
 			upvotes: 0,
 			createdAt: new Date(), // current time
